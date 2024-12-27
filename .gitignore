@@ -1,0 +1,11 @@
+#venv
+gibberish
+
+
+
+#python 
+__pycache__
+
+
+#generated datasets
+*.jsonl
