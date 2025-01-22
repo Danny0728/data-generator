@@ -1,6 +1,6 @@
-# gibberish-data-generator
+# data-generator
 
-A simple utility for generating random gibberish data. This repository includes a `config.py` file for customizing parameters such as the model name, batch size, labels, and the total number of data samples. Additionally, a `tqdm` progress bar is integrated to show real-time progress during data generation.
+A simple utility for generating random  data. This repository includes a `config.py` file for customizing parameters such as the model name, batch size, labels, and the total number of data samples. Additionally, a `tqdm` progress bar is integrated to show real-time progress during data generation.
 
 ---
 
