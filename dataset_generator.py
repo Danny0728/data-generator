@@ -3,6 +3,11 @@ from mild import generate_mild
 from noise import generate_noise
 from word_salad import generate_wordsalad
 from tqdm import tqdm
+from bias import generate_bias
+from safe import generate_safe
+from toxicity import generate_toxicity
+from prompt_injection import generate_injections
+
 
 class DatasetGenerator:
     def __init__(self, model, batch_size, total_count, labels):
@@ -78,9 +83,14 @@ class DatasetGenerator:
         total_count: Total number of entries to generate across all categories.
         """
         categories = [
-            ("mild", generate_mild, "mild.jsonl"),
-            ("noise", generate_noise, "noise.jsonl"),
-            ("word salad", generate_wordsalad, "word_salad.jsonl"),
+            # ("mild", generate_mild, "dataset/mild.jsonl"),
+            # ("noise", generate_noise, "dataset/noise.jsonl"),
+            # ("word salad", generate_wordsalad, "dataset/word_salad.jsonl"),
+            # ("bias", generate_bias, "dataset/bias.jsonl")
+            # ("safe", generate_safe, "dataset/safe.jsonl")
+            # ("toxicity", generate_toxicity, "dataset/toxicity.jsonl")
+            ("prompt_injection", generate_injections, "dataset/prompt_injection.jsonl")
+
         ]
 
         count_per_category = self.total_count // len(categories)
