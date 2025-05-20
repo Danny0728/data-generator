@@ -1,5 +1,5 @@
 #venv
-gibberish
+datagenerator
 
 
 
@@ -8,4 +8,5 @@ __pycache__
 
 
 #generated datasets
-# *.jsonl
+*.jsonl
+*.csv

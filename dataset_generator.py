@@ -82,14 +82,15 @@ class DatasetGenerator:
         Generate datasets for all categories.
         total_count: Total number of entries to generate across all categories.
         """
+        folder_path = "dataset/train"
         categories = [
-            # ("mild", generate_mild, "dataset/mild.jsonl"),
-            # ("noise", generate_noise, "dataset/noise.jsonl"),
-            # ("word salad", generate_wordsalad, "dataset/word_salad.jsonl"),
-            # ("bias", generate_bias, "dataset/bias.jsonl")
-            # ("safe", generate_safe, "dataset/safe.jsonl")
-            # ("toxicity", generate_toxicity, "dataset/toxicity.jsonl")
-            ("prompt_injection", generate_injections, "dataset/prompt_injection.jsonl")
+            # ("mild", generate_mild, f"{folder_path}/mild.jsonl"),
+            # ("noise", generate_noise, f"{folder_path}/noise.jsonl"),
+            # ("word salad", generate_wordsalad, f"{folder_path}/word_salad.jsonl"),
+            # ("bias", generate_bias, f"{folder_path}/bias.jsonl")
+            # ("safe", generate_safe, f"{folder_path}/safe.jsonl")
+            # ("toxicity", generate_toxicity, f"{folder_path}/toxicity.jsonl")
+            ("prompt_injection", generate_injections, f"{folder_path}/prompt_injection.jsonl")
 
         ]
 
