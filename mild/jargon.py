@@ -24,7 +24,7 @@ def make_jargon_prompt():
 
 def generate():
     prompt = make_jargon_prompt()
-    result = ollama.generate(model=MODEL, prompt=prompt)
+    result = ollama.generate(model=MODEL, prompt=prompt, options={"temperature":0.9, "top_k":100, "top_p":0.95})
     response_str = result.get('response', '').strip()
     try:
         data = json.loads(response_str)
